@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="mainDiv">
+
+   <h2 id="headPassword">Password Generator</h2>
+   <div class="upperBox">
+
+   </div>
+
+   <div class="lowerBox">
+    <h4 style="color: white;" id="charaLength"> Character Length <span id="lengthValue"></span></h4>
+  <input type="range" id="range" min="6" max="16" >
+  
+  <div class="incUpper">
+<input type="checkbox" id="upperCase" >
+<label for="upperCase" style="color: white;">Include Upper Case Letter</label>
+</div>
+
+<div class="incLower">
+<input type="checkbox" id="lowerCase">
+<label for="lowerCase" style="color: white;">Include Lowercase Letters</label>
+</div>
+
+<div class="innNum">
+<input type="checkbox" id="Numbers">
+<label for="Numbers" style="color: white;">Include Numbers</label>
+</div>
+
+<div class="innsym">
+<input type="checkbox" id="Symbols">
+<label for="Symbols" style="color: white;">Include Symbols</label>
+</div>
+<div class="lowerinner">
+    <p id="strength">STRENGTH</p>
+    <p id="weak">TOO WEAK!</p>
+    <div class="boxesForDiffLevel">
+        <span id="sp-1"></span>
+        <span id="sp-2"></span>
+        <span id="sp-3"></span>
+        <span id="sp-4"></span>
+    </div>
+</div>
+
+<button id="generate">GENERATE</button>
+</div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

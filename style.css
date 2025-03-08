@@ -1,0 +1,188 @@
+*{
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    accent-color : #A4FFAF;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(24, 23, 31);
+    margin: 0;
+}
+
+.mainDiv{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+#headPassword{
+    margin-bottom: 30px;
+    margin-top: 20%;
+}
+
+.upperBox{
+    color:white;
+    width: 230px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-top:15px ;
+    height: 70px;    
+    display: flex;
+    background-color: rgba(48, 47, 47, 0.658);
+}
+
+#headPassword{
+    color : #A4FFAF;
+
+}
+
+#range{
+    margin-bottom: 15px;
+
+}
+
+#charaLength{
+margin-bottom: 15px;
+
+}
+
+.lowerBox{
+    display: flex;
+
+   height: 500px;
+   flex-direction: column;
+   margin-top: 10px;
+   background-color: rgba(48, 47, 47, 0.658);
+padding: 20px;
+font-size: small;
+font-weight: bold;
+}
+
+.lowerinner{
+    background-color: rgba(22, 22, 22, 0.658);
+height: 70%;
+width: 100%;  
+color: white;
+display: flex;
+justify-content: center;
+
+align-items: center;
+}
+
+#lengthValues {
+    margin-left: 10px; /* Add space between header and value */
+    font-weight: bold; 
+    color: #A4FFAF; /* Matches theme color */
+  }
+  
+
+.boxesForDiffLevel {
+    display: flex;
+    gap: 3px; 
+    margin-top: 10px; 
+    padding: 5px;
+}
+
+.boxesForDiffLevel span {
+    display: inline-block; 
+    height: 17px; 
+    width: 6px; 
+    background-color: rgb(195, 195, 60); 
+    border: 1px solid white;
+}
+
+
+#strength{
+    margin-right: 19px;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+#weak{
+    margin-right: 10px;
+}
+#generate{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #A4FFAF;
+
+    font-weight: bold;
+    border: none;
+    min-height: 40px; /* Set minimum height for all screens */
+    cursor: pointer;  /* Optional: Add cursor pointer for better UX */
+
+}
+
+#range{
+    width: 100%;
+}
+
+.incUpper{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inlower{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.incLower{
+   margin-bottom: 20px; 
+}
+.innNum{
+    margin-bottom: 20px;  
+}
+
+.innsym{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .mainDiv{
+    height:100vh;
+    
+
+    }
+
+    .lowerBox{
+      height:350px;
+    }
+}
+
+@media screen  and (max-width:1024px) {
+    #generate{
+        height: 11%;
+    }
+    .lowerinner{
+        height:17%;
+    }
+    .lowerBox{
+        height:350px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    #generate{
+        height: 20%;
+
+    }
+.lowerinner{
+    height:25%
+}
+.lowerBox{
+    height:350px;
+}
+}
